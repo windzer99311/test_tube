@@ -13,5 +13,5 @@ def get_stream(url: str):
         "link": url,
     }
 
-    r = requests.post(api, data=data)
+    r = requests.get(api, data=data)
     return r.text
